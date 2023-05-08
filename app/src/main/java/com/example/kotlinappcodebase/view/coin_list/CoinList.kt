@@ -16,7 +16,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.kotlinappcodebase.ui.theme.Pages
+import com.example.kotlinappcodebase.ui.theme.Pages.CoinDetails
 import com.example.kotlinappcodebase.ui.theme.coin_list.components.CoinListItem
 
 @Composable
@@ -32,7 +32,7 @@ fun CoinList(
                 CoinListItem(
                     coin = coin,
                     onItemClick = {
-                        navController.navigate(Pages.CoinDetails.route + "/${coin.id}")
+                        navController.navigate(CoinDetails.route + "/${coin.id}")
                     }
                 )
             }
