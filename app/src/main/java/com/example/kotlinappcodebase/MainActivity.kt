@@ -6,12 +6,17 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.kotlinappcodebase.ui.theme.KotlinAppCodebaseTheme
+import com.example.kotlinappcodebase.ui.theme.Pages
+import com.example.kotlinappcodebase.ui.theme.coin_details.CoinDetails
+import com.example.kotlinappcodebase.ui.theme.coin_list.CoinList
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,22 +24,38 @@ class MainActivity : ComponentActivity() {
             KotlinAppCodebaseTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+//                    Greeting("Android")
+                    val navController = rememberNavController()
+                    NavHost(
+                        navController = navController,
+                        startDestination = Pages.CoinList.route
+                    ) {
+                        composable(
+                            route = Pages.CoinList.route
+                        ) {
+                            CoinList(navController)
+                        }
+                        composable(
+                            route = Pages.CoinDetails.route + "/{coinId}"
+                        ) {
+                            CoinDetails()
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    KotlinAppCodebaseTheme {
-        Greeting("Android")
-    }
-}
+//@Composable
+//fun Greeting(name: String) {
+//    Text(text = "Hello $name!")
+//}
+//
+//@Preview(showBackground = true)
+//@Composable
+//fun DefaultPreview() {
+//    KotlinAppCodebaseTheme {
+//        Greeting("Android")
+//    }
+//}
