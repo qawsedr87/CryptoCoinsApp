@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme
+package com.example.kotlinappcodebase.view.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

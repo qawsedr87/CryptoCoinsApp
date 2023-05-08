@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_list
+package com.example.kotlinappcodebase.view.coin_list
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf

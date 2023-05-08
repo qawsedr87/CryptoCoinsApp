@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_details
+package com.example.kotlinappcodebase.view.coin_details
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -15,8 +15,8 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kotlinappcodebase.ui.theme.coin_details.components.CoinTag
-import com.example.kotlinappcodebase.ui.theme.coin_details.components.TeamListItem
+import com.example.kotlinappcodebase.view.coin_details.components.CoinTag
+import com.example.kotlinappcodebase.view.coin_details.components.TeamListItem
 import com.google.accompanist.flowlayout.FlowRow
 
 @Composable

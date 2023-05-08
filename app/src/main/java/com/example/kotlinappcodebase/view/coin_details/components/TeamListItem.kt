@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_details.components
+package com.example.kotlinappcodebase.view.coin_details.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

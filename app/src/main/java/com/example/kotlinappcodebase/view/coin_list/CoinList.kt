@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_list
+package com.example.kotlinappcodebase.view.coin_list
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,8 +16,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.kotlinappcodebase.ui.theme.Pages.CoinDetails
-import com.example.kotlinappcodebase.ui.theme.coin_list.components.CoinListItem
+import com.example.kotlinappcodebase.view.Pages.CoinDetails
+import com.example.kotlinappcodebase.view.coin_list.components.CoinListItem
 
 @Composable
 fun CoinList(

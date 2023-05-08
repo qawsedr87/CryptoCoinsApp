@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase
+package com.example.kotlinappcodebase.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,10 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.kotlinappcodebase.ui.theme.KotlinAppCodebaseTheme
-import com.example.kotlinappcodebase.ui.theme.Pages
-import com.example.kotlinappcodebase.ui.theme.coin_details.CoinDetails
-import com.example.kotlinappcodebase.ui.theme.coin_list.CoinList
+import com.example.kotlinappcodebase.view.ui.theme.KotlinAppCodebaseTheme
+import com.example.kotlinappcodebase.view.coin_details.CoinDetails
+import com.example.kotlinappcodebase.view.coin_list.CoinList
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

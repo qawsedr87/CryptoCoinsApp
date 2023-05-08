@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_details
+package com.example.kotlinappcodebase.view.coin_details
 
 import com.example.kotlinappcodebase.data.model.CoinDetails
 

@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.ui.theme.coin_list.components
+package com.example.kotlinappcodebase.view.coin_list.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
