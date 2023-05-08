@@ -1,4 +1,4 @@
-package com.example.kotlinappcodebase.data.repository
+package com.example.kotlinappcodebase.repository
 
 import com.example.kotlinappcodebase.data.dto.CoinDetailsDto
 import com.example.kotlinappcodebase.data.dto.CoinDto
