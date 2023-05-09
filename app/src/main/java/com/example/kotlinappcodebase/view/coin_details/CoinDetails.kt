@@ -16,8 +16,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kotlinappcodebase.view.coin_details.components.CoinTag
+import com.example.kotlinappcodebase.view.coin_details.components.IconImage
 import com.example.kotlinappcodebase.view.coin_details.components.TeamListItem
 import com.google.accompanist.flowlayout.FlowRow
+
 
 @Composable
 fun CoinDetails(
@@ -41,6 +43,7 @@ fun CoinDetails(
                             style = MaterialTheme.typography.h2,
                             modifier = Modifier.weight(8f)
                         )
+                        IconImage(coin.logo)
                         Text(
                             text = if(coin.isActive) "active" else "inactive",
                             color = if(coin.isActive) Color.Green else Color.Red,
