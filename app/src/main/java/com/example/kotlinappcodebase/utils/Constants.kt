@@ -7,4 +7,6 @@ object Constants {
 
     const val HTTP_ERROR_MESSAGE = "An unexpected error occurred!"
     const val IO_ERROR_MESSAGE = "Couldn't reach server. Check your internet connection!"
+
+    const val ITEM_EMPTY = "No record"
 }

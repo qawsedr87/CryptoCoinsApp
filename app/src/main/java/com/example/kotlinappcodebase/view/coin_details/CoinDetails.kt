@@ -15,9 +15,11 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.kotlinappcodebase.utils.Constants
 import com.example.kotlinappcodebase.view.coin_details.components.CoinTag
 import com.example.kotlinappcodebase.view.coin_details.components.IconImage
 import com.example.kotlinappcodebase.view.coin_details.components.TeamListItem
+import com.example.kotlinappcodebase.view.common.ItemEmpty
 import com.google.accompanist.flowlayout.FlowRow
 
 
@@ -80,15 +82,23 @@ fun CoinDetails(
                         style = MaterialTheme.typography.h3
                     )
                     Spacer(modifier = Modifier.height(15.dp))
+
+                    if (coin.team.isEmpty()) {
+                        ItemEmpty(Constants.ITEM_EMPTY)
+                    }
                 }
-                items(coin.team) { teamMember ->
-                    TeamListItem(
-                        teamMember = teamMember,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(10.dp)
-                    )
-                    Divider()
+
+                if (!coin.team.isNullOrEmpty()) {
+                    items(coin.team) { teamMember ->
+
+                        TeamListItem(
+                            teamMember = teamMember,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(10.dp)
+                        )
+                        Divider()
+                    }
                 }
             }
         }
