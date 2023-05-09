@@ -15,7 +15,7 @@ The implementation of the `MVVM`(Model-View-ViewModel or ViewModel pattern) patt
 
 
 ## Installation
-You can clone the project with IntelliJ IDEA 2022.3+ or download the apk directly from release. 
+You can clone the project with IntelliJ IDEA 2022.3+ or download the [apk](https://github.com/qawsedr87/CryptoCoinsApp/releases/tag/1.0.0) directly from release. 
 
 ```shell
 git clone git@github.com:qawsedr87/CryptoCoinsApp.git
@@ -42,6 +42,8 @@ idea .
 ## Reference 
 Credit goes to the tutorial on [@PhilippLackner YouTube Channel](https://www.youtube.com/@PhilippLackner) by learning a Clean Architecture MVVM pattern in Kotlin 
 
-- What is Diff
-  - adding cryptocurrency logos to the coin detail page
-  - implementing an "Item Empty" section to display when there is no team member data available
+- Difference Between tutorial and mine
+  - Android 13 (API level 33)
+  - features
+    - adding cryptocurrency logos to the coin detail page
+    - implementing an "Item Empty" section to display when there is no team member data available
